@@ -1,0 +1,68 @@
+CREATE SCHEMA pdo;
+
+USE pdo;
+
+CREATE TABLE aluguel(
+id int(11) AUTO_INCREMENT, 
+id_f int(11),
+nome_f varchar(100),
+nome varchar(100),
+telefone varchar(11),
+cpf varchar(11),
+rg varchar(8),
+data_nascimento date, 
+email varchar(25),
+sexo varchar(25),
+cnh varchar(25),
+cep varchar(25),
+endereço varchar(25),
+cidade varchar(25),
+bairro varchar(25),
+numero varchar(25),
+complemento varchar(25),
+forma_pag varchar(25),
+status_pg varchar(25),
+data_in date, 
+data_f date, 
+placa_v varchar(25),
+id_v int(11), 
+modelo varchar(25),
+nome_v varchar(25),
+fabricante varchar(25),
+PRIMARY KEY(id)
+);
+
+
+CREATE TABLE funcionarios(
+id int(11) AUTO_INCREMENT, 
+nome varchar(100),
+telefone varchar(11),
+cpf varchar(11),
+rg varchar(8),
+data_nascimento date, 
+email varchar(100),
+sexo varchar(11),
+cnh varchar(11),
+cep varchar(8),
+endereço varchar(100),
+cidade varchar(100),
+bairro varchar(100),
+numero varchar(100),
+complemento varchar(100),
+PRIMARY KEY(id)
+);
+
+
+CREATE TABLE usuarios(
+ID int(11) AUTO_INCREMENT, 
+usuario varchar(25), 
+senha varchar(10),
+PRIMARY KEY(ID)
+);
+
+
+
+
+
+
+
